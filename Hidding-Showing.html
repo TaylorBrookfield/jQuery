@@ -1,0 +1,19 @@
+<script id="candidateCode">
+        function startUp () {
+            hideFirstCard();
+            makeInvisible();
+            hideLastCard();
+        };
+
+        var hideFirstCard = function () {
+            $(".card").first().hide()
+        };
+
+        var makeInvisible = function () {
+            $('.inv').css("visibility", "hidden");
+        };
+
+        var hideLastCard = function () {
+            $(".card").last().addClass("d-none");
+        };
+    </script>
