@@ -1,0 +1,28 @@
+<script id="candidateCode">
+        function startUp() {
+            changeHeadLineImg("");
+            addLinkButton();
+            setTagLine("Hello World");
+        };
+
+        function changeHeadLineImg(imgUrl) {
+            $("img.img-fluid").attr("src", imgUrl);
+
+        };
+
+        var addLinkButton = function() {
+            $(".call-to-action").html('<a class="btn btn-primary" href="#" role="button">Link</a>');
+        };
+
+        var addHtmlToFirstCard = function() {
+
+            $(".card .card-body" ).html('<div class="alert alert-primary" role="alert"> <p> A simple primary alert—check it out! </p> </div>');
+        };
+
+        function setTagLine(tagText) {
+            $(".tag-line").html(tagText);
+            
+        };
+     
+
+    </script>
