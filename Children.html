@@ -1,0 +1,16 @@
+<script id="candidateCode">
+        function removeAllChildren(querySelector) {
+            $(querySelector).empty();
+        };
+
+        function addChild(querySelector, elementOrjQueryObject) {
+            $(querySelector).append(elementOrjQueryObject);
+        };
+
+        function removeElement(querySelector) {
+            var results = $(querySelector);
+            $(querySelector).remove();
+            return results;
+        };
+
+    </script>
