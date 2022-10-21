@@ -1,0 +1,23 @@
+<script id="candidateCode">
+        function startUp () {
+            removeColors();
+        };
+
+        var removeColors = function() {
+            $(".after-loop").find(".card-templates").removeClass("card-templates").addClass("add-card-templates");
+            $(".after-loop").find(".card-snippets").removeClass("card-snippets").addClass("add-card-snippets");
+            $(".after-loop").find(".card-guides").removeClass("card-guides").addClass("add-card-guides");
+        };
+
+        var toggleColors = function() {
+            $(".after-loop").find(".add-card-templates").toggleClass("card-templates");
+            $(".after-loop").find(".add-card-snippets").toggleClass("card-snippets");
+            $(".after-loop").find(".add-card-guides").toggleClass("card-guides");
+        };
+
+        var addClass = function(querySelector, className) {
+            $(querySelector).addClass(className);
+            console.log(querySelector, className)
+        };
+
+    </script>
